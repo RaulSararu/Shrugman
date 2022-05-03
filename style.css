@@ -1,0 +1,106 @@
+body {
+  background-color: rgb(87, 192, 183);
+  font-family: "Odibee Sans", cursive;
+  letter-spacing: 3px;
+}
+
+.shrugman {
+  height: 300px;
+  width: 200px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.wrong {
+  font-size: 2rem;
+  text-align: center;
+}
+
+#mistakes {
+  color: red;
+  font-weight: bold;
+}
+
+.block {
+  text-align: center;
+  margin-top: 25px;
+}
+
+#shrugmanPic {
+  box-shadow: 0px 0px 35px 6px rgba(0, 0, 0, 0.74);
+}
+
+p {
+  font-size: 2rem;
+}
+button {
+  width: 70px;
+  height: 50px;
+  margin-right: 10px;
+  margin-bottom: 15px;
+  transition: all 0.5s ease;
+  color: #fff;
+  border: 3px solid white;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1;
+  font-size: 17px;
+  font-weight: bold;
+  background-color: transparent;
+  padding: 10px;
+  outline: none;
+  border-radius: 4px;
+}
+button:hover {
+  color: #001f3f;
+  background-color: #fff;
+}
+
+.button {
+  background-color: #c79f48;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 200px;
+  margin-top: 20px;
+}
+
+#keyboard {
+  font-size: 50px;
+  font-weight: bold;
+  color: rgb(192, 50, 50);
+}
+
+#car {
+  font-style: italic;
+  color: blue;
+}
+
+.chooseCategory {
+  text-align: center;
+}
+
+.chooseCar,
+.chooseCity,
+.chooseCountry {
+  width: 100px;
+  background-color: #c79f48;
+  border: 3px solid;
+  transition: none;
+  height: 60px;
+  width: 200px;
+}
+
+.chooseCar:focus,
+.chooseCity:focus,
+.chooseCountry:focus {
+  background-color: green;
+}

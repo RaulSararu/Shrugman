@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Odibee+Sans&family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <title>Shrugman</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Play Shrugman</h1>
+      <div class="wrong">
+        Wrong Guesses: <span id="mistakes">0</span> of
+        <span id="maxWrong"></span>
+      </div>
+      <div class="block">
+        <img id="shrugmanPic" src="./shrugman/0.png" alt="" />
+        <p id="wordSpotlight">The word to be guessed goes here</p>
+        <div class="chooseCategory">
+          <p>Choose category :</p>
+          <button
+            class="chooseCar"
+            onClick="generateRandomCarWord(), reset (), bell()"
+          >
+            Find the car
+          </button>
+          <button
+            class="chooseCity"
+            onClick="generateRandomCityWord(), reset(), bell()"
+          >
+            Find the city
+          </button>
+          <button
+            class="chooseCountry"
+            onClick="generateRandomCountryWord(), reset(), bell()"
+          >
+            Find the country
+          </button>
+          <audio src="./audio/whoosh-6316.mp3" id="audioMusic"></audio>
+          <audio
+            src="./audio/Mechanical-Keyboard-single-button-presses-7-www.FesliyanStudios.com.mp3"
+            id="type"
+          ></audio>
+        </div>
+        <div id="keyboard"></div>
+      </div>
+    </div>
+
+    <script src="./new.js"></script>
+  </body>
+</html>
